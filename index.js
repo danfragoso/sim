@@ -12,6 +12,8 @@ red car.cfg
 
 */
 
+const port = process.env.PORT || 3000;
+
 var net = require('net');
 var fs = require('fs');
 var callCount = 0;
@@ -596,5 +598,5 @@ net.createServer(function(socket){
 		}
 
     });
-}).listen(35000);
+}).listen(port);
 
